@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Access/Revoke to Google Drive Folder/File
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description: Using Email Id and folder name, user give access or revoke permission on google drive folder.
 
-## Available Scripts
+Software/Framework:
+Ui: Figma
+Deploy: Heroku
+Frontend: React
+Backend: Flask
 
-In the project directory, you can run:
+Prerequisites:
+Install Python, Node.js
+Install Flask, React
+Install Google Drive api package.
 
-### `yarn start`
+Installation:
+First install the Flask environment for the backend.
+Then install the React environment for the frontend.
+Lastly install heroku cli to deploy the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Functionality:
+Creating two main functions. One for creating permission, and another one for revoke permission.
+Creating permission take three parameters (email,file_id,role)
+Revoke permission takes two(email, file_id).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Ui: Design Ui on Figma https://www.figma.com/proto/drQL3U37LQiQ9VWF7sVqY5/Permission?node-id=102%3A31&scaling=min-zoom 
 
-### `yarn test`
+Code:
+	Github: https://github.com/tanvir0ahmmed/google-drive-api 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Deployment:
+Deploy in Heroku
+I deploy react and flask separately. And using proxy settings in React(using package.json) passing values from frontend to backend api url.
+Link:
+React: https://react-api-bot-v1.herokuapp.com/ 
+Flask: https://flask-api-bot-v1.herokuapp.com/ (this implementation has no get request, so, this link will be shown: The method is not allowed for the requested URL.)
 
-### `yarn build`
+Issue:
+After deployment, create an issue to send a post request to the backend api/ flask port. But work properly in a local environment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Working Prof:
+Video: https://drive.google.com/file/d/15mI1VKyDUYqIzxH-gNkhy7hvG5xziGZ7/view?usp=sharing  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
